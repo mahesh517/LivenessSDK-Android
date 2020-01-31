@@ -7,8 +7,6 @@
 # LivenessSDK
 LivenessSDK for Android
 
-* TOC
-{:toc}
 
 ## 🌟 Features
 - Supports Android 5.0+
