@@ -30,11 +30,12 @@ An **AAR file** contains a software library used for developing Android apps. It
 
 ## 🐒 How to use
 - Make sure to get the camera permission.
-### Java
+#### Kotlin
 ```kotlin
   
 import io.facex.liveness.Liveness  
 import io.facex.liveness.LivenessListener
+
 class MainActivity : AppCompatActivity(),LivenessListener{
    
 private lateinit var liveness: Liveness
