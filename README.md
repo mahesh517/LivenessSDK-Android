@@ -7,7 +7,7 @@
 # LivenessSDK
 LivenessSDK for Android
 
-## Index
+* TOC
 {:toc}
 
 ## 🌟 Features
