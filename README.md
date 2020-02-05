@@ -16,9 +16,7 @@ LivenessSDK for Android
 * [Customization](#-customization)
   * [Properties](#-Properties)
   * [Thersholds](#-Thresholds)  
-* [Documentation](#-documentation)
 * [Supported OS & SDK Versions](#-supported-os--sdk-versions)
-* [License](#-license)
 
 ## 🌟 Features
 - Supports Android 5.0+
@@ -27,11 +25,13 @@ LivenessSDK for Android
 ## 📲 Installation
 * Requires Java8 support/ gradle plugin 3+
 
-#### Using [ AAR  (Android Archive)]([https://developer.android.com/studio/projects/android-library](https://developer.android.com/studio/projects/android-library))
+#### Using [ AAR  (Android Archive)](https://developer.android.com/studio/projects/android-library)
 
 An **AAR file** contains a software library used for developing Android apps. It is structurally similar to an . APK **file** (Android Package), but it allows a developer to store a reusable component that can be used across multiple different apps. To integrate AAR  into your android project:
-
-- Download the latest `liveness.aar` release from here.
+- Purchase Active Liveness SDK plan from `https://search.facex.io`.
+- Download the file.json config from the portal.
+- Create `assets` directory in the android project and copy the downloaded `file.json` to `assets` directory.
+- Download the latest `liveness.aar` release from [here](https://github.com/teamfacex/LivenessSDK-Android/releases/latest/download/liveness.aar).
 - Open android studio and add the liveness SDK to your android project
   - Click  `File > New > New Module`.
   - Click `Import .JAR/.AAR Package` from repo directory then click `Next`.
@@ -39,8 +39,7 @@ An **AAR file** contains a software library used for developing Android apps. It
 - Make sure the library is listed at the top of your `settings.gradle` file, as shown here for a library named "liveness":
   -  `include ':app',  ':liveness'`
  - Open the app module's `build.gradle` file and add a new line to the `dependencies` block as shown in the following snippet:
-   - `dependencies { implementation project(":liveness")  
-}`
+   - `dependencies { implementation project(":liveness")  }`
 
 ## 🐒 How to use
 - Make sure to get the camera permission.
