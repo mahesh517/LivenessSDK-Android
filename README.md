@@ -14,7 +14,7 @@ LivenessSDK for Android
 * [Interface](#-interfaces)
    * [LivenessListener](#livenesslistener)
 * [Customization](#-customization)
-  * [Properties](#-Properties)
+  * [Properties](#-Steps)
   * [Thersholds](#-Thresholds)  
 * [Supported OS & SDK Versions](#-supported-os--sdk-versions)
 
@@ -87,7 +87,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 You can set some properties for liveness.
 
-#### Properties
+#### Steps
 | Steps | Value | Default | 
 | ------- | ------- |------- | 
 | **Eyes** | `Boolean` | `true` | 
