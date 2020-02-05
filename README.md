@@ -7,19 +7,31 @@
 # LivenessSDK
 LivenessSDK for Android
 
+* [Features](#-features)
+* [Installation](#-installation)
+  * [AAR](#using--aar--android-archive)
+* [How to use](#-how-to-use)
+* [Interface](#-interfaces)
+   * [LivenessListener](#livenesslistener)
+* [Customization](#-customization)
+  * [Properties](#-Properties)
+  * [Thersholds](#-Thresholds)  
+* [Documentation](#-documentation)
+* [Supported OS & SDK Versions](#-supported-os--sdk-versions)
+* [License](#-license)
 
 ## 🌟 Features
 - Supports Android 5.0+
 
 
 ## 📲 Installation
-Requires Java8 support/ gradle plugin 3+
+* Requires Java8 support/ gradle plugin 3+
 
 #### Using [ AAR  (Android Archive)]([https://developer.android.com/studio/projects/android-library](https://developer.android.com/studio/projects/android-library))
 
 An **AAR file** contains a software library used for developing Android apps. It is structurally similar to an . APK **file** (Android Package), but it allows a developer to store a reusable component that can be used across multiple different apps. To integrate AAR  into your android project:
 
-- Clone the entire repo
+- Download the latest `liveness.aar` release from here.
 - Open android studio and add the liveness SDK to your android project
   - Click  `File > New > New Module`.
   - Click `Import .JAR/.AAR Package` from repo directory then click `Next`.
@@ -76,7 +88,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 You can set some properties for liveness.
 
-#### Steps
+#### Properties
 | Steps | Value | Default | 
 | ------- | ------- |------- | 
 | **Eyes** | `Boolean` | `true` | 
@@ -88,7 +100,7 @@ You can set some properties for liveness.
 #### Thresholds
 | Property | Values | Default | 
 | ------- | ------- |------- | 
-| **EYE_THRESHOLD**  | `0.0 ... 6.0` | `3.0` | 
+| **EYE_THRESHOLD**  | `0.0 ... 6.0` | `2.5` | 
 | **MOUTH_THRESHOLD**  | `2.0 ... 9.0` | `6.0` | 
 | **TIMER**   | `Seconds` | `5 seconds` | 
 | **MAX_TIMER**   | `Seconds` | `15 seconds` |
