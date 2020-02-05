@@ -28,10 +28,10 @@ LivenessSDK for Android
 #### Using [ AAR  (Android Archive)](https://developer.android.com/studio/projects/android-library)
 
 An **AAR file** contains a software library used for developing Android apps. It is structurally similar to an . APK **file** (Android Package), but it allows a developer to store a reusable component that can be used across multiple different apps. To integrate AAR  into your android project:
-- Purchase Active Liveness SDK license from [facex portal](https://search.facex.io){:target="_blank"}.
+- Purchase Active Liveness SDK license from [facex portal](https://search.facex.io).
 - Download the file.json config from the portal.
 - Create `assets` directory in the android project and copy the downloaded `file.json` to `assets` directory.
-- Download the latest `liveness.aar` release from [here](https://github.com/teamfacex/LivenessSDK-Android/releases/latest/download/liveness.aar){:target="_blank"}.
+- Download the latest `liveness.aar` release from [here](https://github.com/teamfacex/LivenessSDK-Android/releases/latest/download/liveness.aar).
 - Open android studio and add the liveness SDK to your android project
   - Click  `File > New > New Module`.
   - Click `Import .JAR/.AAR Package` from repo directory then click `Next`.
