@@ -44,7 +44,7 @@ An **AAR file** contains a software library used for developing Android apps. It
 ## 🐒 How to use
 - Make sure to get the camera permission.
 #### Kotlin
-```kotlin
+```
   
 import io.facex.liveness.Liveness  
 import io.facex.liveness.LivenessListener
@@ -73,7 +73,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 #### LivenessListener 
 
-```kotlin
+```
 
  override fun livenessSuccess(live: Boolean?,bitmap : Bitmap) {
   }
