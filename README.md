@@ -85,19 +85,23 @@ override fun livenessSuccess(live: Boolean?,bitmap : Bitmap) {
 You can set some properties for liveness.
 
 #### Steps
-| Steps | Value | Default | 
-| **Eyes** | `Boolean` | `true` | 
-| **Mouth**  | `Boolean` | `true` | 
-| **Yaw** | `Boolean` | `true` | 
-| **Random**  | `Boolean` | `true` | 
+
+|Steps|Value|Default| 
+|-------|-------|-------| 
+|**Eyes**|`Boolean`|`true`| 
+|**Mouth** |`Boolean`|`true`| 
+|**Yaw**|`Boolean`|`true`| 
+|**Random** |`Boolean`|`true`| 
 
 
 #### Thresholds
-| Property | Values | Default | 
-| **EYE_THRESHOLD**  | `0.0 ... 6.0` | `2.6` | 
-| **MOUTH_THRESHOLD**  | `2.0 ... 9.0` | `6.0` | 
-| **TIMER**   | `Seconds` | `5 seconds` | 
-| **MAX_TIMER**   | `Seconds` | `15 seconds` |
+
+|Property|Values|Default| 
+|-------|-------|-------| 
+|**EYE_THRESHOLD**|`0.0 ... 6.0`|`2.6`| 
+|**MOUTH_THRESHOLD**|`2.0 ... 9.0`|`6.0`| 
+|**TIMER**|`Seconds`|`5 seconds`| 
+|**MAX_TIMER**|`Seconds`|`15 seconds`|
 
 
 
