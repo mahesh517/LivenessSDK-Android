@@ -99,7 +99,7 @@ You can set some properties for liveness.
 #### Thresholds
 | Property | Values | Default | 
 | ------- | ------- |------- | 
-| **EYE_THRESHOLD**  | `0.0 ... 6.0` | `2.5` | 
+| **EYE_THRESHOLD**  | `0.0 ... 6.0` | `2.6` | 
 | **MOUTH_THRESHOLD**  | `2.0 ... 9.0` | `6.0` | 
 | **TIMER**   | `Seconds` | `5 seconds` | 
 | **MAX_TIMER**   | `Seconds` | `15 seconds` |
