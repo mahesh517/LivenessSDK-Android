@@ -163,10 +163,23 @@ eg: fragment_holder
 #### LivenessListener 
 
 ```
+Kotlin
+
 override fun livenessSuccess(live: Boolean?,bitmap : Bitmap) {
   }
   
  override fun livenessError(live: Boolean?, errorMessage: String?) {
+  }
+
+Java
+  @Override
+  public void livenessError(Boolean live,String errorMessage){
+
+  }
+
+  @Override
+  public void livenessSuccess(Boolean live,Bitmap bitmap){    
+    
   }
 ```
 
