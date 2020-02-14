@@ -157,7 +157,9 @@ eg: fragment_holder
     android:id="@+id/fragment_holder"
     android:background="@color/black"
     tools:context=".MainActivity">
+
     .............................
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
