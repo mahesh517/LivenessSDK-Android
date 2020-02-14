@@ -43,6 +43,45 @@ An **AAR file** contains a software library used for developing Android apps. It
 
 ## 🐒 How to use
 - Make sure to get the camera permission.
+```
+if (ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.CAMERA
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+
+            if (ActivityCompat.shouldShowRequestPermissionRationale(
+                    this,
+                    Manifest.permission.CAMERA
+                )
+            ) {
+
+
+            } else {
+                ActivityCompat.requestPermissions(
+                    this,
+                    arrayOf(Manifest.permission.CAMERA),
+                    1
+                )
+            }
+
+        } else {
+
+        }
+override fun onRequestPermissionsResult(requestCode: Int,
+                                            permissions: Array<String>, grantResults: IntArray) {
+        when (requestCode) {
+            1 -> {
+                // If request is cancelled, the result arrays are empty.
+                if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+//                    liveness.startLiveness()
+                }
+                return
+            }
+
+        }
+    }
+```
 #### Kotlin
 
 ``` 
@@ -68,6 +107,57 @@ override fun onCreate(savedInstanceState: Bundle?) {
   }
 }
 ```
+
+##### Java
+
+```
+import io.facex.liveness.Liveness  
+import io.facex.liveness.LivenessListener
+
+public class Mainactivity extends AppCompatActivity implements LivenessListener{
+  private Liveness liveness;
+
+  @Override
+  public void livenessError(Boolean live,String errorMessage){
+
+  }
+
+  @Override
+  public void livenessSuccess(Boolean live,Bitmap bitmap){    
+    
+  }
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.activity_main);
+      liveness= new Liveness(this, R.id.fragment_holder);
+	    liveness.Eyes=true;
+	    liveness.Mouth=true;
+	    ....
+	    liveness.startLiveness();
+   }
+}
+```
+
+##### layout file for fragment
+
+```
+liveness.startLiveness() creates a fragment, so it needs a view to bind the fragment and pass in the id of the fragment container using the liveness constructor;
+eg: fragment_holder
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_holder"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    .............................
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
 ## Interfaces
 
 #### LivenessListener 
