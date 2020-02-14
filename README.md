@@ -143,8 +143,11 @@ public class Mainactivity extends AppCompatActivity implements LivenessListener{
 ##### layout file for fragment
 
 ```
-liveness.startLiveness() creates a fragment, so it needs a view to bind the fragment and pass in the id of the fragment container using the liveness constructor;
+liveness.startLiveness() creates a fragment, so it needs a view to bind the fragment.
+Pass in the id of the fragment container using the liveness constructor.
 eg: fragment_holder
+
+
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
