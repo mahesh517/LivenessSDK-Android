@@ -2,11 +2,18 @@
 
 [![Build Status](https://img.shields.io/badge/platform-android-green)](https://img.shields.io/badge/platform-android-green)
 [![Build Status](https://img.shields.io/badge/type-library-blue)](https://img.shields.io/badge/type-library-blue)
+[![Licence](https://img.shields.io/cocoapods/l/LivenessSDKOnline?color=red&logo=red)](https://img.shields.io/cocoapods/l/LivenessSDKOnline?color=red&logo=red)
 
 
 # LivenessSDK
-LivenessSDK for Android
+## 📜 Introduction
+Brought to you by FaceX.io, LivenessSDK Android can now be used to integrate offline liveness Detection by Motion/gesture into your Android applications
 
+## 🔧 Functioning
+This LivenessSDK is Liveness based on Motion detection. Users will be directed by the screen to perform facial gestures and actions which will be analyzed to verify and identify live visitors. 
+
+## 📑 Index
+* [Documentation](#-documentation)
 * [Features](#-features)
 * [Installation](#-installation)
   * [AAR](#using--aar--android-archive)
@@ -17,6 +24,18 @@ LivenessSDK for Android
   * [Steps](#steps)
   * [Thersholds](#-Thresholds)  
 * [Supported OS & SDK Versions](#-supported-os--sdk-versions)
+* [License](#-license)
+
+## 📚 Documentation 
+
+- Step 1: Sign up for a developer account through [FaceX User Portal](https://search.facex.io/#/register)
+- Step 2: Navigate to Plans & Payments Tab & Select  [Plans](https://search.facex.io/#/home/payments/plans)
+- Step 3: Scroll down to Mobile SDKs and Select Active Liveness
+- Step 3: Purchase a plan matching your license requirement after adding required details 
+- Step 4: Navigate to Mobile SDK Tab & Select [License History](https://search.facex.io/#/home/mobilesdk/license)
+- Step 5: Download the json file for Android SDK from the offline license Section
+- Step 6: Download the Offline Active Livenesss Android SDK from this Github [LivenessSDKOnline](https://github.com/teamfacex/LivenessSDK-Android)
+- Step 7: Add the JSON file from the portal to your project.
 
 ## 🌟 Features
 - Supports Android 5.0+
@@ -217,3 +236,7 @@ You can set some properties for liveness.
 ### 📋 Supported OS & SDK Versions
 * Android 5.0+
 * Java 8
+
+## 👮🏻 License
+
+- [EULA](https://github.com/teamfacex/LivenessSDK-Android/blob/master/LICENCE)
