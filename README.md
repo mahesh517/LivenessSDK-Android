@@ -233,7 +233,7 @@ You can set some properties for liveness.
 
 
 
-### 📋 Supported OS & SDK Versions
+## 📋 Supported OS & SDK Versions
 * Android 5.0+
 * Java 8
 
