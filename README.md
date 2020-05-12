@@ -34,7 +34,7 @@ This LivenessSDK is Liveness based on Motion detection. Users will be directed b
 - Step 3: Purchase a plan matching your license requirement after adding required details 
 - Step 4: Navigate to Mobile SDK Tab & Select [License History](https://search.facex.io/#/home/mobilesdk/license)
 - Step 5: Download the json file for Android SDK from the offline license Section
-- Step 6: Download the Offline Active Livenesss Android SDK from this Github [LivenessSDKOnline](https://github.com/teamfacex/LivenessSDK-Android)
+- Step 6: Download the Offline Active Livenesss Android SDK from this Github [LivenessSDKOffline](https://github.com/teamfacex/LivenessSDK-Android)
 - Step 7: Add the JSON file from the portal to your project.
 
 ## 🌟 Features
